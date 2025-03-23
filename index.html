@@ -1,12 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>IT Support Dashboard</title>
-  </head>
-  <body class="bg-gray-900 text-white">
-    <div id="root"></div> 
-    <script src="index.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT Support Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>IT Support Training Dashboard</h1>
+    
+    <div class="chat-area">
+      <div id="messages" class="messages"></div>
+      <input type="text" id="messageInput" placeholder="Type your response..." />
+      <button id="sendMessageButton">Send</button>
+    </div>
+
+    <button id="createTicketButton">Create Ticket</button>
+
+    <div id="ticketsArea" class="tickets-area">
+      <h2>Tickets</h2>
+      <ul id="ticketList"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
 </html>
